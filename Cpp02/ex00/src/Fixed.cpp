@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smackere <smackere@student.42.fr>          +#+  +:+       +#+        */
+/*   By: smackere <smackere@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 09:04:06 by smackere          #+#    #+#             */
-/*   Updated: 2022/11/05 09:40:13 by smackere         ###   ########.fr       */
+/*   Updated: 2022/11/07 19:03:23 by smackere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Fixed::Fixed(const Fixed& copy) : _fp(copy._fp)
     return;
 }
 
-Fixed& Fixed::operator=(const Fixed& as_op)
+Fixed Fixed::operator=(const Fixed& as_op)
 {
     std::cout << "Copy assignment operator called" << std::endl;
     this->_fp = as_op._fp;

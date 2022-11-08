@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smackere <smackere@student.42.fr>          +#+  +:+       +#+        */
+/*   By: smackere <smackere@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/05 10:18:47 by smackere          #+#    #+#             */
-/*   Updated: 2022/11/05 11:12:25 by smackere         ###   ########.fr       */
+/*   Created: 2022/11/08 13:58:57 by smackere          #+#    #+#             */
+/*   Updated: 2022/11/08 17:16:43 by smackere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef FIXED_H
 # define FIXED_H
@@ -26,7 +27,7 @@ public:
     Fixed(const int param);
     Fixed(const float number);
     Fixed(const Fixed& copy);
-    // Fixed& operator=(const Fixed& per);
+    Fixed& operator=(const Fixed& oper);
     ~Fixed();
 
     int     getRawBits( void ) const;
@@ -36,6 +37,6 @@ public:
     int     toInt( void ) const;
 };
 
-std::ostream& operator<<(std::ostream& o, const Fixed& fixed);
+std::ostream&   operator<<(std::ostream& out, const Fixed& Fixed);
 
 #endif
